@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwiaciarnia Motyl</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="main.html">
+                <img class="logo" src="./logo.png" alt="Logo Motyl" loading="lazy">
+            </a>
+            <div class="menu">
+                <div class="btn">
+                </div>
+                <a href="o-nas.html" class="underline">O nas</a>
+                <a href="galeria.html" class="underline">Galeria</a>
+                <a href="uslugi.html" class="underline">Usługi</a>
+                <a href="kontakt.html" class="underline">Kontakt</a>
+                <div class="socials">
+                    <a href="https://facebook.com/">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 11.0681C22 4.95368 17.0727 0 11 0C4.92319 0 0 4.95368 0 11.0681C0 16.5911 4.02119 21.1706 9.28125 22V14.2682H6.48794V11.0688H9.28125V8.629C9.28125 5.85574 10.9209 4.32418 13.4344 4.32418C14.6383 4.32418 15.8984 4.54001 15.8984 4.54001V7.26347H14.509C13.145 7.26347 12.7188 8.11779 12.7188 8.99286V11.0681H15.7692L15.279 14.2675H12.7188V21.9993C17.9747 21.1699 22 16.5904 22 11.0674V11.0681Z" />
+                        </svg>
+                    </a>
+                    <a href="https://messenger.com/">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.00157724 10.6682C0.00157724 4.53574 4.80273 0 11.0008 0C17.1988 0 22 4.53574 22 10.6682C22 16.7971 17.1988 21.3363 11.0008 21.3363C9.89056 21.3363 8.8202 21.1892 7.82133 20.9136C7.62472 20.86 7.41642 20.8779 7.23425 20.9603L5.04265 21.9233C4.47001 22.1776 3.82174 21.7693 3.80387 21.1432L3.73925 19.1815C3.73237 18.9416 3.62444 18.7196 3.44914 18.5588C1.21837 16.5469 -0.0382949 13.6725 0.000889787 10.6688L0.00157724 10.6682ZM7.62816 8.65976L4.40195 13.7935C4.07954 14.2767 4.69549 14.8389 5.15402 14.4808L8.62702 11.8497C8.86694 11.6669 9.17836 11.6669 9.42515 11.8497L11.9887 13.7756C12.762 14.3523 13.8613 14.1406 14.3734 13.335L17.5996 8.2013C17.922 7.71811 17.3061 7.16686 16.8476 7.51397L13.3746 10.1451C13.1456 10.3279 12.8232 10.3279 12.5867 10.1451L10.0198 8.21918C9.24642 7.63563 8.14374 7.83976 7.62816 8.65976Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-main contact img-gradient">
+        <div class="container">
+            <h1>Kontakt</h1>
+        </div>
+    </section>
+
+    <section class="section-three">
+        <div class="container">
+            <h2>Formularz kontaktowy</h2>
+            <hr>
+        </div>
+    </section>
+
+    <div class="container">
+        <form action="odbior.php" method="POST">
+            <div class="form-contact">
+                <div class="data">
+                    <label for="fname">Imię</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Podaj imię..." required>
+
+                    <label for="lname">Nazwisko</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Podaj nazwisko..." required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Podaj email" required>
+
+                    <label for="city">Miasto</label>
+                    <select id="city" name="city" required>
+                        <option hidden selected value="">Wybierz miasto</option>
+                        <option value="gdynia">Gdynia</option>
+                        <option value="sopot">Sopot</option>
+                        <option value="gdansk">Gdańsk</option>
+                    </select>
+                </div>
+                <div class="subject">
+                    <label for="message_content">Treść</label>
+                    <textarea id="message_content" name="message_content"
+                        placeholder="Napisz czym jesteś zainteresowany"></textarea>
+
+                    <p class="form-radio">Czy chciałbyś/chciałabyś zapisać się do naszego newslettera?</p>
+                    <div class="form-control-position">
+                        <label class="form-control" for="agreement1">
+                            <input type="radio" id="agreement1" name="agreement1" value="tak">
+                            tak
+                        </label>
+
+                        <label class="form-control" for="agreement2">
+                            <input type="radio" id="agreement2" name="agreement2" value="nie">
+                            nie
+                        </label>
+                    </div>
+
+                    <p class="form-checkbox">Skąd o nas wiesz?</p>
+                    <div class="form-control-position">
+                        <label class="form-control" for="advertisement1"><input id="advertisement1"
+                                name="advertisement1" value="social media" type="checkbox">social media</label>
+                        <label class="form-control" for="advertisement2"><input id="advertisement2"
+                                name="advertisement2" value="polecenie" type="checkbox">z polecenia</label>
+                        <label class="form-control" for="advertisement3"><input type="checkbox" id="advertisement3"
+                                name="advertisement3" value="inne">inne</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="reset" value="Wyczyść">
+                </div>
+                <div>
+                    <input type="submit" value="Wyślij">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="section-two">
+        <div class="container">
+            <h2>Dane firmy</h2>
+            <hr>
+        </div>
+
+        <div class="container">
+            <div class="panel">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2318.3557824355726!2d18.5497538157561!3d54.474304280230875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda09bdbc04edb%3A0x7d6399370194ca0a!2sCentrum%20Handlowe%20Klif%2C%20Aleja%20Zwyci%C4%99stwa%20256%2C%2081-525%20Gdynia!5e0!3m2!1spl!2spl!4v1679317102529!5m2!1spl!2spl"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="panel-description">
+                    <div class="contact-us">
+                        <a href="https://goo.gl/maps/eeRAGwfywjsg84hv5">
+                            <div class="address">ul. Aleja Zwycięstwa 256, 81-525 Gdynia</div>
+                        </a>
+                        <div class="address">Czynne od pon-pt: 8:00 - 18:00</div>
+                        <a href="tel:+48123123123">
+                            <div class="address">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8881 15.9201V18.9201C20.8892 19.1986 20.8322 19.4743 20.7206 19.7294C20.6091 19.9846 20.4454 20.2137 20.2402 20.402C20.035 20.5902 19.7927 20.7336 19.5289 20.8228C19.265 20.912 18.9855 20.9452 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66194 16.3148 5.61345 14.2663 4.07812 11.8501C2.38809 9.2413 1.33636 6.27109 1.00812 3.1801C0.983127 2.90356 1.01599 2.62486 1.10462 2.36172C1.19324 2.09859 1.33569 1.85679 1.52288 1.65172C1.71008 1.44665 1.93792 1.28281 2.19191 1.17062C2.44589 1.05843 2.72046 1.00036 2.99812 1.0001H5.99812C6.48342 0.995321 6.95391 1.16718 7.32188 1.48363C7.68985 1.80008 7.93019 2.23954 7.99812 2.7201C8.12474 3.68016 8.35957 4.62282 8.69812 5.5301C8.83266 5.88802 8.86178 6.27701 8.78202 6.65098C8.70227 7.02494 8.51698 7.36821 8.24812 7.6401L6.97812 8.9101C8.40167 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.52 13.3712 14.8633 13.1859 15.2372 13.1062C15.6112 13.0264 16.0002 13.0556 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C19.6539 13.9586 20.0975 14.2033 20.4146 14.5776C20.7318 14.9519 20.9003 15.4297 20.8881 15.9201Z"
+                                        stroke="#AB8742" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                +48 123 123 123
+                            </div>
+                        </a>
+                        <a href="mailto:motyl@gmail.com">
+                            <div class="address">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                        stroke="#AB8742" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22 6L12 13L2 6" stroke="#AB8742" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                motyl@gmail.com
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-contact">
+                <div class="footer-about">
+                    <div class="logo-footer">
+                        <img src="./logo-footer.png" alt="Logo stopka" loading="lazy">
+                    </div>
+                    <p>Pracownia florystyczna MOTYL jest firmą rodzinną. Została otwarta w 1970 roku i działa do
+                        dnia
+                        dzisiejszego. Mamy wielu stałych klientów, którzy przyjeżdżają do nas z najodleglejszych
+                        dzielnic Trójmiasta. Z przyjemnością obserwujemy, że grono stałych klientów powiększa się.
+                        Otworzyliśmy również filię w centrum handlowym Riviera w Gdyni, a niedawno naszą centralną
+                        pracownię w Gdyni Orłowie.</p>
+                </div>
+                <div class="contact-bar">
+                    <p class="order">Zamów bukiet</p>
+                    <p class="order-quote">dla siebie lub dla bliskiej osoby</p>
+                    <div class="contact-footer-details">
+                        <div class="contact-position">
+                            <div class="btn-contact-form">
+                                <a href="kontakt.html">
+                                    <div class="btn-contact">Wypełnij formularz kontaktowy</div>
+                                </a>
+                            </div>
+                            <div class="btn-contact-details">
+                                <a href="mailto:motyl@gmail.com">
+                                    <div class="btn-contact">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                                stroke="#AB8742" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M22 6L12 13L2 6" stroke="#AB8742" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        motyl@gmail.com
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-contact-details">
+                                <a href="tel:+48123123123">
+                                    <div class="btn-contact">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20.8881 15.9201V18.9201C20.8892 19.1986 20.8322 19.4743 20.7206 19.7294C20.6091 19.9846 20.4454 20.2137 20.2402 20.402C20.035 20.5902 19.7927 20.7336 19.5289 20.8228C19.265 20.912 18.9855 20.9452 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66194 16.3148 5.61345 14.2663 4.07812 11.8501C2.38809 9.2413 1.33636 6.27109 1.00812 3.1801C0.983127 2.90356 1.01599 2.62486 1.10462 2.36172C1.19324 2.09859 1.33569 1.85679 1.52288 1.65172C1.71008 1.44665 1.93792 1.28281 2.19191 1.17062C2.44589 1.05843 2.72046 1.00036 2.99812 1.0001H5.99812C6.48342 0.995321 6.95391 1.16718 7.32188 1.48363C7.68985 1.80008 7.93019 2.23954 7.99812 2.7201C8.12474 3.68016 8.35957 4.62282 8.69812 5.5301C8.83266 5.88802 8.86178 6.27701 8.78202 6.65098C8.70227 7.02494 8.51698 7.36821 8.24812 7.6401L6.97812 8.9101C8.40167 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.52 13.3712 14.8633 13.1859 15.2372 13.1062C15.6112 13.0264 16.0002 13.0556 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C19.6539 13.9586 20.0975 14.2033 20.4146 14.5776C20.7318 14.9519 20.9003 15.4297 20.8881 15.9201Z"
+                                                stroke="#AB8742" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        +48 123 123 123
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-socials">
+                            <a href="https://facebook.com/">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 11.0681C22 4.95368 17.0727 0 11 0C4.92319 0 0 4.95368 0 11.0681C0 16.5911 4.02119 21.1706 9.28125 22V14.2682H6.48794V11.0688H9.28125V8.629C9.28125 5.85574 10.9209 4.32418 13.4344 4.32418C14.6383 4.32418 15.8984 4.54001 15.8984 4.54001V7.26347H14.509C13.145 7.26347 12.7188 8.11779 12.7188 8.99286V11.0681H15.7692L15.279 14.2675H12.7188V21.9993C17.9747 21.1699 22 16.5904 22 11.0674V11.0681Z" />
+                                </svg>
+                            </a>
+                            <a href="https://messenger.com/">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.00157724 10.6682C0.00157724 4.53574 4.80273 0 11.0008 0C17.1988 0 22 4.53574 22 10.6682C22 16.7971 17.1988 21.3363 11.0008 21.3363C9.89056 21.3363 8.8202 21.1892 7.82133 20.9136C7.62472 20.86 7.41642 20.8779 7.23425 20.9603L5.04265 21.9233C4.47001 22.1776 3.82174 21.7693 3.80387 21.1432L3.73925 19.1815C3.73237 18.9416 3.62444 18.7196 3.44914 18.5588C1.21837 16.5469 -0.0382949 13.6725 0.000889787 10.6688L0.00157724 10.6682ZM7.62816 8.65976L4.40195 13.7935C4.07954 14.2767 4.69549 14.8389 5.15402 14.4808L8.62702 11.8497C8.86694 11.6669 9.17836 11.6669 9.42515 11.8497L11.9887 13.7756C12.762 14.3523 13.8613 14.1406 14.3734 13.335L17.5996 8.2013C17.922 7.71811 17.3061 7.16686 16.8476 7.51397L13.3746 10.1451C13.1456 10.3279 12.8232 10.3279 12.5867 10.1451L10.0198 8.21918C9.24642 7.63563 8.14374 7.83976 7.62816 8.65976Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
