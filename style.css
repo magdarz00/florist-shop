@@ -128,31 +128,31 @@ header .btn {
 }
 
 .main {
-  background: url(./banner.jpg) no-repeat;
+  background: url(./images/banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .about {
-  background: url(./about.jpg) no-repeat;
+  background: url(./images/about.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .gallery {
-  background: url(./gallery.jpg) no-repeat;
+  background: url(./images/gallery.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .services {
-  background: url(./services.jpg) no-repeat;
+  background: url(./images/services.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .contact {
-  background: url(./img1-about.jpg) no-repeat;
+  background: url(./images/img1-about.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -607,6 +607,10 @@ iframe {
 }
 
 @media (max-width: 580px) {
+  header .menu {
+    height: 10vh;
+  }
+
   .section-main h1 {
     font-size: 50px;
     line-height: 60px;
